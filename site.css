@@ -1,0 +1,146 @@
+/* miseEnPage.css 
+octobre 2011 */
+
+body {margin: 0px;
+font-family: sans-serif; 
+}
+
+div {padding: 8px;
+}
+
+.haut {/*color: blue;*/
+  /*border: 3px solid cyan;*/
+border-bottom: 2px solid silver;
+  padding: 0px;
+  height: 90px;
+}
+
+.milieu {display: table; /* AJOUT */
+  padding: 0px;
+
+  /*color: red;
+  border: 3px solid yellow;*/
+}
+
+/*.bas {color: green;
+  border: 3px solid magenta;
+}*/
+
+.hautCentre {/*border: 2px solid red;*/
+  padding: 0px;
+  text-align: center;
+  margin-left: 250px;
+  font-size: 46px;
+  padding-top: 20px;
+/*  height: 66px; */ /* + le padding-top (20) + border rouge deux fois (4) = 90 */
+  height: 70px; /* + le padding-top (20) + border rouge deux fois (4) = 90 */
+}
+
+.hautGauche {float: left;
+top: 0px;
+left: 0px;
+padding: 0px;
+}
+
+.menu {width: 200px;
+  display:table-cell;
+
+border-right: 2px solid silver;
+
+/*  color: #C90; *//* olive */
+/*  border: 2px solid #C90; */
+}
+
+.contenu {
+/*margin-left: 204px;*/
+margin-left: 200px;
+  display:table-cell;
+
+/*  color: #09C;*/ /* bleu */
+/*  border: 2px solid #09C;*/
+}
+
+ul {margin: 0px;
+}
+
+/* AJOUT */
+.menu a {text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {color: red;
+  font-weight: bold;
+}
+
+.menu li {list-style-type: none;
+  padding: 6px;
+  background-color: #DDD; /* gris */
+  margin-bottom: 1px;
+}
+
+
+form .champ label {
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+}
+
+form .error {
+	color: red;
+}
+
+form .champ .error {
+	margin-left: 114px;
+	list-style-type: none;
+}
+
+form .action {
+	margin-left: 155px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table td, table th {
+	border: 1px solid black;
+	padding: 5px;
+	margin: 0;
+}
+
+table tbody tr:nth-of-type(odd) {
+	background: #FFC;
+}
+
+table tbody tr.current {
+	background: green;
+}
+
+.error {
+	border: 1px solid #600;
+	border-radius: 5px;
+	background: #900;
+	color: white;
+	padding: 10px;
+	/* display: inline-block; */
+	/* min-width: 100%; */
+	box-shadow: 0 0 5px #200;
+	font-weight: bold;
+	/* width: 100%; */
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.error * {
+	margin: 0;
+	padding: 0;
+}
+
+.error p+ul {
+	margin-top: 10px;
+}
+
+.error ul {
+	margin-left: 20px;
+}
+
